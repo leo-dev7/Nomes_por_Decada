@@ -8,6 +8,9 @@ from pprint import pprint
 
 
 def pegar_nome_por_decada(nome: str):
+    """
+        Relaciona o nome de acordo com as décadas
+    """
     url = f'https://servicodados.ibge.gov.br/api/v2/censos/nomes/{nome}'
     dados_decadas = fazer_request(url=url)
     pprint(dados_decadas)
